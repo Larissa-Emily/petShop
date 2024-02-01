@@ -1,0 +1,51 @@
+@media (max-width: 720px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-container {
+    justify-content: center;
+  }
+  .banner-container {
+    display: block;
+  }
+  .text-main h1 {
+    font-size: 3.5em;
+  }
+  .text-main h4 {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+  }
+  .image-dog {
+    margin-top: 20%;
+  }
+
+  .image-dog .color {
+    width: 400px;
+  }
+  .image-dog img {
+    padding-top: 58%;
+  }
+}
+
+@media (max-width: 990px) {
+  .main-banner {
+    height: auto;
+  }
+  .image-dog {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 990px) {
+  .banner-container .content {
+    display: flex;
+  }
+}
+
+@media (min-height: 1px) {
+  #register,
+  #section-schedule {
+    height: 1000px;
+  }
+}

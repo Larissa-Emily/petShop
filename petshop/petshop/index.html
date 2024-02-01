@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/petshop/css/styles.css" />
+    <link rel="stylesheet" href="/petshop/css/mobile.css" />
+    <script src="/petshop/js/script.js" defer></script>
+    <title>Canil Feliz</title>
+  </head>
+  <body>
+    <section class="main-banner">
+      <div class="menu-container">
+        <nav class="menu">
+          <div class="logo">
+            <img src="./images/logo.png" alt="" />
+            <h3>Pet Shop Canil Feliz</h3>
+          </div>
+        </nav>
+        <ul class="menu-list">
+          <li>home</li>
+          <li>contatos</li>
+          <li>horários</li>
+          <li>produtos</li>
+        </ul>
+      </div>
+      <div class="banner-container">
+        <div class="content">
+          <div class="text-main">
+            <h1>Aqui cuidamos do seu pet</h1>
+            <h4>marque o melhor horário para seu pet aqui no Canil Feliz.</h4>
+            <div class="links-network">
+              <img src="/petshop/images/instagram.svg" />
+              <img src="/petshop/images/whatsapp.svg" />
+              <img src="/petshop/images/instagram.svg" />
+            </div>
+            <div class="scheduling">
+              <button id="scheduling">Fazer cadastro</button>
+              <button id="schedule">Marcar horário</button>
+            </div>
+          </div>
+          <div class="image-dog">
+            <div class="color">
+              <img src="/petshop/images/dog.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="register">
+      <div class="register-scheduling">
+        <div class="register-top">
+          <h2>Ficha do cliente</h2>
+          <button class="close">X</button>
+        </div>
+        <div class="btns">
+          <button class="customer-registration">Cadastro cliente</button>
+          <button class="animal-registration">Cadastro Animal</button>
+        </div>
+
+        <div class="all-registrations">
+          <div class="client">
+            <form>
+              <label>Nome</label>
+              <input
+                type="text"
+                name="nameClient"
+                id="nameClient"
+                placeholder="Digite seu nome"
+              />
+
+              <label>Email</label>
+              <input
+                type="text"
+                name="emailClient"
+                id="emailClient"
+                placeholder="Digite seu email"
+              />
+              <label>CPF</label>
+              <input
+                type="number"
+                name="cpfClient"
+                id="cpfClient"
+                placeholder="Digite seu cpf"
+              />
+              <label>Telefone</label>
+              <input
+                type="number"
+                name="telClient"
+                id="telClient"
+                placeholder="Digite seu elefone com DDD"
+              />
+              <p>--></p>
+            </form>
+          </div>
+          <div class="animal">
+            <form>
+              <label>Nome</label>
+              <input
+                type="text"
+                name="nameAnimal"
+                id="nameAnimal"
+                placeholder="Digite o nome do animal"
+              />
+              <label>Peso</label>
+              <input
+                type="number"
+                name="pesoAnimal"
+                id="pesoAnimal"
+                placeholder="Peso do animal"
+              />
+              <label>Tamanho</label>
+              <input
+                type="number"
+                name="tamanhoAnimal"
+                id="tamanhoAnimal"
+                placeholder="Tamanho do animal"
+              />
+              <label>Idade</label>
+              <input
+                type="number"
+                name="idadeAnimal"
+                id="idadeAnimal"
+                placeholder="Idade do animal"
+              />
+              <button id="salvarCadastro">Salvar cadastro</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-schedule">
+      <div class="btn-close">
+        <button class="close">X</button>
+      </div>
+      <div class="all-schedule">
+        <div class="servico">
+          <form>
+            <label>Nome do Cliente</label>
+            <input
+              type="text"
+              name="nameClientServico"
+              id="nameClientServico"
+              placeholder="Digite seu nome"
+            />
+
+            <label>Nome do Animal</label>
+            <input
+              type="text"
+              name="namePet"
+              id="namePet"
+              placeholder="Digite nome do pet"
+            />
+
+            <label>Telefone</label>
+            <input
+              type="number"
+              name="telClientServico"
+              id="telClientServico"
+              placeholder="Digite seu elefone com DDD"
+            />
+            <label>Data</label>
+            <input type="date" name="dateJobs" id="dateJobs" />
+            <label for="cepInput">Digite o CEP:</label>
+            <input type="text" id="cepInput" placeholder="Digite o CEP">
+        
+            <button id="consultarCEP">Consultar</button>
+        
+            <div id="resultado"></div>
+          </form>
+        </div>
+        <div class="all-jobs">
+          <div class="listJobs">
+            <h2>Nossos serviços</h2>
+          </div>
+        </div>
+      </div>
+      <div class="total-result">
+        <div class="total-service">
+          <div id="totalValue">Total: R$ 0,00</div>
+          <button id="close-service">Fechar serviço</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

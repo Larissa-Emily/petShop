@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pet Shop</title>
+</head>
+<body>
+  <label for="petName">Nome do Pet:</label>
+  <input type="text" id="petName">
+
+  <label for="ownerName">Nome do Dono:</label>
+  <input type="text" id="ownerName">
+
+  <label for="additionalInfo">Informações Adicionais:</label>
+  <input type="text" id="additionalInfo">
+
+  <button onclick="salvarCadastro()">Salvar Cadastro</button>
+  <button onclick="recarregarPagina()">Recarregar Página</button>
+  <button onclick="buscarPets()">Buscar Pets</button>
+
+  <script>
+    var petDataArray = [];
+
+    function salvarCadastro() {
+      var petName = document.getElementById('petName').value;
+      var ownerName = document.getElementById('ownerName').value;
+      var additionalInfo = document.getElementById('additionalInfo').value;
+
+      // Cria um objeto com os dados do pet
+      var petData = {
+        petName: petName,
+        ownerName: ownerName,
+        additionalInfo: additionalInfo
+      };
+
+      // Adiciona os dados do pet ao array
+      petDataArray.push(petData);
+
+      // Salva o array em localStorage
+      localStorage.setItem('petData', JSON.stringify(petDataArray));
+    }
+
+    function recarregarPagina() {
+      var petDataSalvo = localStorage.getItem('petData');
+      if (petDataSalvo) {
+        petDataArray = JSON.parse(petDataSalvo);
+      }
+
+      // Limpa os campos de entrada
+      document.getElementById('petName').value = '';
+      document.getElementById('ownerName').value = '';
+      document.getElementById('additionalInfo').value = '';
+    }
+
+    function buscarPets() {
+      // Exemplo: Mostrar os pets em um alerta (você pode ajustar conforme necessário)
+      alert('Dados dos Pets: ' + JSON.stringify(petDataArray, null, 2));
+    }
+
+    recarregarPagina();
+  </script>
+</body>
+</html>

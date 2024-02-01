@@ -1,0 +1,249 @@
+/*
+    fundo: #e67318
+    funco-dog: #e59f3f
+    letras: #ebe3d9
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-banner {
+  width: 100vw;
+  height: 100vh;
+  background: #e67318;
+  color: #ebe3d9;
+}
+
+.menu-container,
+.logo,
+.menu-list,
+.banner-container,
+.image-dog,
+#services,
+.all-schedule {
+  display: flex;
+}
+
+.menu-container {
+  padding: 20px 30px;
+}
+
+.menu-container .logo img {
+  width: 120px;
+}
+
+.menu-container .logo h3 {
+  text-transform: capitalize;
+  width: 100px;
+  padding-top: 10px;
+  font-weight: 100;
+}
+
+.menu-container {
+  justify-content: space-between;
+}
+
+.menu-list li {
+  margin: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  color: #272823;
+}
+
+.banner-container {
+  width: 100vw;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.text-main,
+.image-dog {
+  width: 100%;
+}
+
+.text-main {
+  padding-top: 10%;
+}
+
+.text-main h1 {
+  font-size: 5em;
+}
+
+.text-main h4 {
+  width: 500px;
+  font-size: 1.3em;
+  margin: 0 auto;
+  padding: 30px;
+  font-weight: 100;
+}
+
+.text-main #scheduling,
+#schedule {
+  width: 150px;
+  padding: 15px;
+  margin-top: 5%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #272823;
+}
+
+.text-main #scheduling:hover,
+.text-main #schedule:hover{
+  background-color: #272823;
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+  align-items: center;
+}
+
+.text-main .links-network img {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.image-dog {
+  justify-content: end;
+  padding-top: 10%;
+}
+
+.image-dog .color {
+  width: 480px;
+  background: #e59f3f;
+  border-radius: 5%;
+}
+
+.image-dog img {
+  width: 100%;
+  padding-top: 39%;
+  border-radius: 0px 0px 5% 0px;
+}
+
+#register,
+#section-schedule {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: #272823;
+  color: #fff;
+  display: none;
+  z-index: 999;
+}
+
+.register-top {
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.close {
+  font-size: 1.5em;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.close:hover{
+  background: #e67318;
+  border-radius: 20px;
+
+}
+
+.btn-close{
+  text-align: end;
+  margin: 35px ;
+}
+
+.all-registrations,
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.btns button,
+#salvarCadastro,
+#services button,
+#to-mark,
+#close-service,
+#consultarCEP {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin: 15px;
+  background: #e67318;
+  color: #fff;
+  cursor: pointer;
+}
+
+form {
+  width: 300px;
+}
+
+form label {
+  font-weight: bold;
+  padding-bottom: 500px;
+}
+
+form input,
+#salvarCadastro {
+  padding: 10px;
+  display: block;
+  border: none;
+}
+
+form input {
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.animal {
+  display: none;
+}
+
+
+.all-schedule {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.all-jobs{
+  padding:15px  50px;
+  /* background-color: red; */
+}
+
+
+#to-mark{
+  width: 200px;
+}
+
+#section-schedule .total-result{
+  width: 100vw;
+  height: 500px;
+  /* background-color: red; */
+  padding: 10%;
+}
